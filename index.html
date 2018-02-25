@@ -43,22 +43,23 @@ h1,h2,h3,h4,h5,h6,.title,legend { font-family: 'Source Sans Pro', 'Helvetica', a
 body, input, button, select, textarea { font-family: 'Source Sans Pro', 'Helvetica', arial, sans-serif; font-weight: normal; }
 
 .gf-menu, .gf-menu .item, .breadcrumb, [class^="icon-"] { font-family: 'Source Sans Pro', 'Helvetica', arial, sans-serif; font-weight: normal;}
-#jPanel_187,#jPanel_187 .jpanelContent{height: 450px; }#jPanel_187,#jPanel_187 .jpanelContent{width: 300px; }#jPanel_187 .jpanelHandle{background-color: #333333; color: #ffffff; } #jPanel_187 .jpanelContent{ border:1px solid #333333; }#jPanel_187 .jpanelContent{background-color: #eeeeee; }#jPanel_187{right:-311px; top:20%;}
+
+#jPanel_187,#jPanel_187 .jpanelContent{height: 450px; }#jPanel_187,#jPanel_187 .jpanelContent{width: 300px; }#jPanel_187 .jpanelHandle{background-color: #333333; color: #ffffff; } #jPanel_187 .jpanelContent{ border:1px solid #333333; }#jPanel_187 .jpanelContent{background-color: #eeeeee; }#jPanel_187{right:-311px; top:20%;}
 #jPanel_187 .jpanelHandle p{margin: 0;}
 #jPanel_187 .jpanelHandle{border-radius:5px 0 0 5px;}
 #jPanel_187 .jpanelHandle, #jPanel_187 .jpanelContent{float:right;}
 
 	</style>
 	<script type="application/json" class="joomla-script-options new">{"csrf.token":"eb280265ad48ffed5d63e37a2f2e9e48","system.paths":{"root":"\/sample\/template11","base":"\/sample\/template11"}}</script>
-	<script src="media/jui/js/jquery.min.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
-	<script src="media/jui/js/jquery-noconflict.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
-	<script src="media/jui/js/jquery-migrate.min.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
-	<script src="media/system/js/caption.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
+	<script src="media/jui/js/jquery.min.js" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+	<script src="media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="media/system/js/caption.js" type="text/javascript"></script>
 	<script src="templates/pulse/js/TweenMax.min.js" type="text/javascript"></script>
 	<script src="templates/pulse/js/jq.scrollmagic.min.js" type="text/javascript"></script>
-	<script src="media/system/js/mootools-core.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
-	<script src="media/system/js/core.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
-	<script src="media/system/js/mootools-more.js?0cb539e4b7836f57c91e5b0c6f97aba3" type="text/javascript"></script>
+	<script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="media/system/js/core.js" type="text/javascript"></script>
+	<script src="media/system/js/mootools-more.js" type="text/javascript"></script>
 	<script src="libraries/gantry/js/browser-engines.js" type="text/javascript"></script>
 	<script src="templates/pulse/js/rokmediaqueries.js" type="text/javascript"></script>
 	<script src="modules/mod_roknavmenu/themes/default/js/rokmediaqueries.js" type="text/javascript"></script>
@@ -77,12 +78,15 @@ body, input, button, select, textarea { font-family: 'Source Sans Pro', 'Helveti
 	<script type="text/javascript">
 jQuery(window).on('load',  function() {
 				new JCaption('img.caption');
-			});jQuery(document).ready(function()
+			});
+jQuery(document).ready(function()
     {
         if(typeof jQuery(".hasTooltip").tooltip != "undefined"){
             jQuery(".hasTooltip").tooltip({"html": true,"container": "body"});
         }
-    });
+    });
+
+
 	jQuery(window).load(function(){		
 		
 		clickJpanel("#jPanel_187");
@@ -91,16 +95,16 @@ jQuery(window).on('load',  function() {
 		
 		closeJpanel("#jPanel_187");
 	});
-if (typeof RokSprocket == 'undefined') RokSprocket = {};
+if (typeof RokSprocket == 'undefined') RokSprocket = {};
 Object.merge(RokSprocket, {
 	SiteURL: 'http://www.njwebnest.in/sample/template11/',
 	CurrentURL: 'http://www.njwebnest.in/sample/template11/',
 	AjaxURL: 'http://www.njwebnest.in/sample/template11/index.php?option=com_roksprocket&amp;task=ajax&amp;format=raw&amp;ItemId=101'
 });
-window.addEvent('domready', function(){
+window.addEvent('domready', function(){
 		RokSprocket.instances.mosaic = new RokSprocket.Mosaic();
 });
-window.addEvent('domready', function(){
+window.addEvent('domready', function(){
 	RokSprocket.instances.mosaic.attach(155, '{"pages":1,"animations":["fade","scale","rotate"],"displayed":[24,25,26,27]}');
 });
 
